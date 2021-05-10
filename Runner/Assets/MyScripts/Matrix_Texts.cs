@@ -54,6 +54,8 @@ public class Matrix_Texts : UGraphics
         int min = 0;
         int max = 10;
         int digits = 0;
+
+        //正規分布っぽくして極端な桁数を減らす
         digits = (int)((random(0, 20) + random(0, 20) + random(0, 20)) / 3);
         textArray = new char[digits];
         if(digits == 0)
